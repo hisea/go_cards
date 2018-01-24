@@ -1,10 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	d := newDeck()
-	fmt.Println(d)
+	d := readFromFile("my_cards")
+	d.print()
+	// d.saveToFile("my_cards")
 }
